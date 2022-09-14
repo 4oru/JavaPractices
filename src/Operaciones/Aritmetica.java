@@ -14,4 +14,11 @@ public class Aritmetica {
         return a + b;
     }
 
+    public int sumarConArgumentos(int arg1, int arg2) {
+        this.a = arg1; //El Argumento A arg1 se agisna al atributo de la clase O objeto "a" osea a this.a HACIENDO referencia al objeto que se esta ejecutando en ese momento
+        this.b = arg2;
+
+        return this.sumarConRetorno();
+    }
+
 }
