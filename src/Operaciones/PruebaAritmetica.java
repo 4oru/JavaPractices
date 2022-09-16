@@ -2,17 +2,14 @@ package Operaciones;
 
 public class PruebaAritmetica {
     public static void main(String[] args) {
-
         Aritmetica aritmetica1 = new Aritmetica();
+        System.out.println("Aritmetica1 a: "+ aritmetica1.a);
+        System.out.println("Aritmetica1 b :"+aritmetica1.b);
 
-        aritmetica1.a = 3;
-        aritmetica1.b = 2;
-        aritmetica1.sumar();
+        //Segundo constructor
+        Aritmetica aritmetica2 = new Aritmetica(10, 20);
+        System.out.println("Aritmetica2 a: "+aritmetica2.a);
+        System.out.println("Aritmetica2 b: "+aritmetica2.b);
 
-        var resultado = aritmetica1.sumarConRetorno();
-        System.out.print("El valor de la suma es: "+resultado);
-
-        resultado = aritmetica1.sumarConArgumentos(5,8);
-        System.out.println("El valor de la suma con Argumentos es: "+resultado);
     }
 }
